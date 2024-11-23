@@ -1,5 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("../styles/base.css");
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+	padding-top: 60px;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 15px 0;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.navbar li {
+	margin: 0 10px;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+	color: var(--highlight-color);
 }
