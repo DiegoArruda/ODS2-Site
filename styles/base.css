@@ -1,0 +1,8 @@
+:root {
+	--background-color: #f4f4f4; /* Fundo suave */
+	--primary-color: #2b7a4b; /* Verde escuro (agricultura) */
+	--secondary-color: #264653; /* Tom terroso */
+	--highlight-color: #f4a261; /* Amarelo ou dourado (alimento) */
+	--card-bg-color: #e9c46a; /* Verde claro para os cartões */
+	--text-color: #333; /* Cor de texto neutra */
+}
