@@ -1,21 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Doa+ Recife</title>
-		<link rel="stylesheet" href="../styles/style.css" />
-	</head>
-	<body>
-		<nav class="navbar">
-			<ul>
-				<!-- <li><a href="homepage.html">HOME</a></li> -->
-				<li><a href="onde_descartar.html">ONDE DOAR</a></li>
-				<li><a href="como_reciclar.html">COMO DOAR</a></li>
-				<li><a href="educacionais.html">CONTEÚDOS</a></li>
-				<li><a href="contact.html">CONTATOS</a></li>
-				<!-- <li><a href="parceiros.html">MARCAS</a></li> -->
-			</ul>
-		</nav>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doa + Recife</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#donation-locations">Onde Doar</a>
+        <a href="#about">Como Doar</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contatos</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main>
+   
+    <section id="home" class="hero">
+      <div class="slider" id="slider">
+        <div class="slide">
+          <a href="https://www.terra.com.br/planeta/o-que-e-agricultura-sustentavel-vantagens-e-desvantagens,2a582a98730e9c9d7160d92572098bb4v45boh8l.html" target="_blank">
+            <img src="../src/hands-holding-grass.jpg" alt="Agricultura sustentável">
+            <div class="slide-content"><p>Entenda sobre agricultura sustentável e seus benefícios.</p></div>
+          </a>
+          
+        </div>
+        <div class="slide">
+          <a href="https://www2.recife.pe.gov.br/noticias/28/03/2024/prefeitura-do-recife-inaugura-1o-centro-de-referencia-de-seguranca-alimentar-e#:~:text=N%C3%A3o%20%C3%A9%20com%20qualquer%20comida,de%20Educa%C3%A7%C3%A3o%20Alimentar%20e%20Nutricional." target="_blank">
+            <img src="../src/recife-sem-fome.jpg" alt="Centro de referência alimentar">
+            <div class="slide-content"><p >Recife inaugura centro de referência para segurança alimentar.</p></div>
+          </a>
+          
+        </div>
+        <div class="slide">
+          <a href="https://semil.sp.gov.br/educacaoambiental/2023/09/o-que-sao-os-ods-e-o-que-voce-tem-a-ver-com-isso/#:~:text=Os%20Objetivos%20de%20Desenvolvimento%20Sustent%C3%A1vel%20(ODS)%20s%C3%A3o%2017%20objetivos%20ambiciosos,no%20Brasil%20e%20no%20mundo." target="_blank">
+            <img src="../src/ods-quadrado2-1024x1004.jpg" alt="ODS e seu impacto">
+            <div class="slide-content"><p>Os Objetivos de Desenvolvimento Sustentável (ODS) e seu impacto global.</p></div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1>DOA + RECIFE</h1>
+        <p>Transformando vidas com solidariedade e ações sustentáveis.</p>
+        <button onclick="scrollToSection('#donation-locations')">Veja Locais de Doação</button>
+      </div>
+    </section>
+    
+
+   
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>O que é a Fome Zero?</h2>
+        <p>
+          A Fome Zero é um dos 17 Objetivos de Desenvolvimento Sustentável estabelecidos pela ONU. Seu objetivo é erradicar a fome em todas as suas formas até 2030, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável.
+        </p>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Segurança Alimentar</h3>
+            <p>Garantir que todos tenham acesso a alimentos seguros, nutritivos e suficientes durante todo o ano.</p>
+          </div>
+          <div class="card">
+            <h3>Agricultura Sustentável</h3>
+            <p>Promover práticas agrícolas que aumentem a produtividade sem degradar o meio ambiente.</p>
+          </div>
+          <div class="card">
+            <h3>Combate à Fome</h3>
+            <p>Trabalhar com comunidades para reduzir a desigualdade e garantir alimentos básicos para os mais vulneráveis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Projeto 1">
+            <h3>Alimentação para Todos</h3>
+            <p>Distribuição de alimentos para comunidades carentes em áreas urbanas.</p>
+          </div>
+          <div class="project-card">
+            <img src="project2.jpg" alt="Projeto 2">
+            <h3>Horta Comunitária</h3>
+            <p>Ensinando famílias a cultivar seus próprios alimentos de forma sustentável.</p>
+          </div>
+          <div class="project-card">
+            <img src="project3.jpg" alt="Projeto 3">
+            <h3>Educação Nutricional</h3>
+            <p>Promovendo uma alimentação saudável por meio da educação e da conscientização.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Cadastre uma rota de doação</h2>
+          <p>Cadastre uma rota de doação e comece a ajudar a erradicar a fome.</p>
+          <form id="route-form">
+            <input type="text" id="donor-name" placeholder="Seu nome" required>
+            <input type="email" id="donor-email" placeholder="Seu e-mail" required>
+            <input type="text" id="donation-items" placeholder="O que será doado?" required>
+            <div id="map" style="height: 300px; margin: 20px 0; border: 1px solid #ddd;"></div>
+            <button type="submit">Salvar Rota</button>
+          </form>
+        </div>
+      </section>
+      
+      <section id="routes" class="section">
+        <div class="container">
+          <h2>Rotas Cadastradas</h2>
+          <ul id="routes-list"></ul>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Projeto ODS2 - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/index.js"></script>
+</body>
 </html>
