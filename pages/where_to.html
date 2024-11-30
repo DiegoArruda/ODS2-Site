@@ -107,7 +107,7 @@
 			function initMap() {
 				// Inicializa o mapa com um centro genérico
 				map = new google.maps.Map(document.getElementById("map"), {
-					center: { lat: -23.5505, lng: -46.6333 },
+					center: { lat: -8.0476, lng: -34.8770 }, // Recife
 					zoom: 12,
 				});
 
@@ -148,7 +148,7 @@
 			function buscarPontosDeDoacao(location) {
 				let request = {
 					location: location,
-					radius: "5000", // Raio de busca =  5km
+					radius: "10000", // Raio de busca = 10km
 					type: ["point_of_interest"],
 					keyword: "doar alimentos",
 				};
