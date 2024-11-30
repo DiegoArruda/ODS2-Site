@@ -133,7 +133,7 @@
                     });
 
                     // Busca pontos de doacao na localização atual
-                    buscarPontosDedDoacao(pos);
+                    buscarPontosDeDoacao(pos);
                 }, function() {
                     // Erro ao obter localização, usar centro genérico
                     buscarPontosDeDoacao(map.getCenter());
@@ -148,7 +148,7 @@
             
             let request = {
                 location: location,
-                radius: '5000', // Raio de busca =  5km
+                radius: '10000', // Raio de busca =  5km
                 type: ['point_of_interest'], 
                 keyword: 'doar alimentos' 
             };
@@ -197,7 +197,7 @@
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChwQ9MO2u6FpfLgUomQSaGr6khB2bGrBc&libraries=places&callback=initMap" async defer></script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
