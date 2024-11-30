@@ -137,27 +137,30 @@
 				</div>
 			</section>
 
-			<section id="contact" class="section contact">
-				<div class="container">
-					<h2>Cadastre uma rota de doação</h2>
-					<p>Cadastre uma rota de doação e comece a ajudar a erradicar a fome.</p>
-					<form id="route-form">
-						<input type="text" id="donor-name" placeholder="Seu nome" required />
-						<input type="email" id="donor-email" placeholder="Seu e-mail" required />
-						<input
-							type="text"
-							id="donation-items"
-							placeholder="O que será doado?"
-							required
-						/>
-						<div
-							id="map"
-							style="height: 300px; margin: 20px 0; border: 1px solid #ddd"
-						></div>
-						<button type="submit">Salvar Rota</button>
-					</form>
-				</div>
-			</section>
+    <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Cadastre uma rota de doação</h2>
+          <p>Cadastre uma rota de doação e comece a ajudar a erradicar a fome.</p>
+          <form id="route-form">
+            <input type="text" id="donor-name" placeholder="Seu nome" required>
+            <input type="email" id="donor-email" placeholder="Seu e-mail" required>
+            <input type="text" id="donation-items" placeholder="O que será doado?" required>
+            <div id="map" style="height: 300px; margin: 20px 0; border: 1px solid #ddd;"></div>
+            <button type="submit">Salvar Rota</button>
+          </form>
+        </div>
+      </section>
+      
+      <section id="routes" class="section">
+        <div class="container">
+          <h2>Rotas Cadastradas</h2>
+          <ul id="routes-list"></ul>
+        </div>
+      </section>
+      <script src="../scripts/route.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChwQ9MO2u6FpfLgUomQSaGr6khB2bGrBc&libraries=places&callback=initMap" async defer></script>
+      
+  </main>
 
 			<section id="routes" class="section">
 				<div class="container">
