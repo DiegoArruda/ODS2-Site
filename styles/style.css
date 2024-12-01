@@ -259,3 +259,21 @@ form button:hover {
 #routes-list button:hover {
 	background: var(--secondary-color);
 }
+
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	display: none; /* Escondido inicialmente */
+}
+
+.back-to-top:hover {
+	background-color: var(--secondary-color);
+}
