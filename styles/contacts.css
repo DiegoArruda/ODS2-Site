@@ -1,23 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("../styles/base.css");
 
 body {
-	font-family: "Roboto", Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: var(--background-color);
-	padding-top: 60px;
-}
-
-.navbar {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: var(--primary-color);
-	color: white;
-	padding: 15px 0;
-	text-align: center;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	background-color: #fff3cd;
 }
 
 .navbar ul {
@@ -44,20 +28,21 @@ body {
 	color: var(--highlight-color);
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
+.container-list {
+	max-width: 800px;
+	margin: 80px auto;
 	padding: 20px;
 	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 	border-radius: 8px;
 }
 
 h1 {
+	padding-top: 20px;
 	text-align: center;
 	font-size: 32px;
 	margin-bottom: 20px;
-	color: var(--primary-color);
+	color: var(--secondary-color);
 }
 
 .contacts-list {
@@ -72,7 +57,7 @@ h1 {
 	border-radius: 8px;
 	padding: 15px 20px;
 	margin: 20px;
-	background-color: var(--card-bg-color);
+	background-color: var(--primary-color);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -86,7 +71,14 @@ h1 {
 	margin-top: 0;
 	font-size: 22px;
 	font-weight: 700;
-	color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.contact-image {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 10px;
 }
 
 .contact-card p {
@@ -110,7 +102,7 @@ h1 {
 }
 
 .contact-card a:hover {
-	color: var(--highlight-color);
+	color: var(--li);
 }
 
 /* Botão Voltar ao Topo (opcional) */
@@ -129,5 +121,5 @@ h1 {
 }
 
 .back-to-top:hover {
-	background-color: var(--highlight-color);
+	background-color: var(--secondary-color);
 }
