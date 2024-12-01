@@ -1,0 +1,103 @@
+@import url(./base.css);
+
+body {
+	background-color: #fff3cd;
+}
+.container-header {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.header {
+	background: var(--gradient);
+	color: white;
+	padding: 15px 15px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	transition: color 0.3s;
+	text-align: center;
+}
+
+.nav a:hover {
+	color: var(--secondary-color);
+}
+
+.container-main {
+	max-width: 800px;
+	margin: 80px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+h1,
+h2 {
+	color: var(--primary-color);
+	text-align: center;
+}
+
+p,
+ul,
+ol {
+	color: var(--text-color);
+}
+
+.food {
+	float: right;
+	margin-left: 15px;
+	width: 30%;
+	max-width: 100%; /* Para garantir que a imagem seja responsiva */
+}
+
+ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+ol {
+	list-style: decimal;
+	margin-left: 20px;
+}
+
+section {
+	padding: 20px;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	display: none; /* Escondido inicialmente */
+}
+
+.back-to-top:hover {
+	background-color: var(--secondary-color);
+}
