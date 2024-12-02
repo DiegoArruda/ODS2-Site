@@ -65,7 +65,7 @@
 
 .hero {
 	position: relative;
-	height: 90vh;
+	height: 93vh;
 	background: url("../src/hero-bg.jpg") center/cover no-repeat;
 	color: white;
 	display: flex;
