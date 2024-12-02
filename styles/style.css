@@ -271,7 +271,8 @@ form button:hover {
 	border-radius: 50%;
 	cursor: pointer;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	display: none; /* Escondido inicialmente */
+	display: none;
+	/* Escondido inicialmente */
 }
 
 .back-to-top:hover {
